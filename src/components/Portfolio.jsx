@@ -1,5 +1,7 @@
 import React from "react";
-import fretty from '../images/fretty.jpg';
+import crwn from '../images/crwn.png';
+import slack from '../images/slack-features.jpg';
+import startup from '../images/startup.png';
 
 const Portfolio = () => {
   return (
@@ -7,9 +9,9 @@ const Portfolio = () => {
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
-            <p class="subtitle">Guitar App</p>
+            <p class="subtitle">Slack Clone App</p>
 
-            <p class="featured-title">Fretastic.com</p>
+            <p class="featured-title">slack-clone-app.netlify.app</p>
             <p class="featured-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit sint, molestias qui nihil accusamus praesentium vel
@@ -17,17 +19,17 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <a href="/">
-          <img src={fretty} alt="Fretastic" />
+        <a href="https://slack-clone-app.netlify.app" target="_blank" rel="noreferrer">
+          <img src={slack} alt="Fretastic" />
         </a>
       </div>
 
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
-            <p class="subtitle">Guitar App</p>
+            <p class="subtitle">CRWN Brand</p>
 
-            <p class="featured-title">Fretastic.com</p>
+            <p class="featured-title">crwn-brand-live.herokuapp.com</p>
             <p class="featured-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit sint, molestias qui nihil accusamus praesentium vel
@@ -35,17 +37,17 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <a href="/">
-          <img src={fretty} alt="Fretastic" />
+        <a href="https://crwn-brand-live.herokuapp.com" target="_blank" rel="noreferrer">
+          <img src={crwn} alt="Fretastic" />
         </a>
       </div>
 
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
-            <p class="subtitle">Guitar App</p>
+            <p class="subtitle">CleanUp Co.</p>
 
-            <p class="featured-title">Fretastic.com</p>
+            <p class="featured-title">startup-next.netlify.app</p>
             <p class="featured-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit sint, molestias qui nihil accusamus praesentium vel
@@ -53,8 +55,8 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <a href="/">
-          <img src={fretty} alt="Fretastic" />
+        <a href="https://startup-next.netlify.app" target="_blank" rel="noreferrer">
+          <img src={startup} alt="Fretastic" />
         </a>
       </div>
     </section>

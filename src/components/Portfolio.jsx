@@ -36,7 +36,7 @@ const Portfolio = () => {
           </div>
         </div>
         <a href="/">
-          <img src="images/fretty.jpg" alt="Fretastic" />
+          <img src={fretty} alt="Fretastic" />
         </a>
       </div>
 
@@ -54,7 +54,7 @@ const Portfolio = () => {
           </div>
         </div>
         <a href="/">
-          <img src="images/fretty.jpg" alt="Fretastic" />
+          <img src={fretty} alt="Fretastic" />
         </a>
       </div>
     </section>

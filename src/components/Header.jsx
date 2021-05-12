@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import github from '../images/github.png';
 import linkedin from '../images/linkedin.png';
 import instagram from '../images/instagram.png';
+import cv from '../images/cv.svg';
 
 const Header = () => {
   return (
@@ -22,28 +23,30 @@ const Header = () => {
             <li>
               <Link to="/contact">Hire me</Link>
             </li>
-            <li>
-              <a href="https://drive.google.com/file/d/1bJhjGIvlsJJTPCxwsY0RvGEkHAk9r_Zv/view?usp=sharing" target="_blank" rel="noreferrer">My CV</a>
-            </li>
           </ul>
         </nav>
       </header>
       <div class="social-header">
         <ul>
           <li>
-            <Link to="/">
+            <a href="https://github.com/arsimmsejdiu" target="_blank" rel="noreferrer">
               <img src={github} alt="dribbble" />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/">
+            <a href="https://www.linkedin.com/in/arsim-sejdiu-93447331/" target="_blank" rel="noreferrer">
               <img src={linkedin} alt="behance" />
-            </Link>
+            </a>
           </li>
           <li>
             <Link to="/">
-              <img src={instagram} alt="twitter" />
+              <img src={instagram} alt="insta" />
             </Link>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1bJhjGIvlsJJTPCxwsY0RvGEkHAk9r_Zv/view?usp=sharing" target="_blank" rel="noreferrer">
+              <img src={cv} alt="cv" />
+            </a>
           </li>
         </ul>
       </div>

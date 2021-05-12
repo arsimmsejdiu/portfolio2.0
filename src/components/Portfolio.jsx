@@ -1,4 +1,5 @@
 import React from "react";
+import fretty from '../images/fretty.jpg';
 
 const Portfolio = () => {
   return (
@@ -17,7 +18,7 @@ const Portfolio = () => {
           </div>
         </div>
         <a href="/">
-          <img src="images/fretty.jpg" alt="Fretastic" />
+          <img src={fretty} alt="Fretastic" />
         </a>
       </div>
 

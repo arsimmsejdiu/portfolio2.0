@@ -1,4 +1,5 @@
 import React from "react";
+import feature from '../images/featureproject1.png';
 
 const Feature = () => {
   return (
@@ -7,18 +8,21 @@ const Feature = () => {
         <div class="inner transition2">
           <p class="subtitle">Featured Project</p>
           <a href="/" class="featured-title">
-            DesignCourse.com ReDesign
+            Leutrimolluri.com Blog App
           </a>
+          <small class="small">It will be available soon</small>
 
           <p class="featured-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-            molestiae, soluta autem nemo quae delectus quas? Excepturi.
+            This Application has a fully featured and customizable layouts, with user authentication and private routes.
+            It has also direct message and comment section per each blog. 
           </p>
+
+          <p class="subtitle">More To Come Soon.</p>
         </div>
       </div>
       <img
         class="right transition2"
-        src="../images/project-1.png"
+        src={feature}
         alt="Featured Project"
       />
     </section>

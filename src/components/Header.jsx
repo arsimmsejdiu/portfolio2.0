@@ -1,4 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import github from '../images/github.png';
+import linkedin from '../images/linkedin.png';
+import instagram from '../images/instagram.png';
 
 const Header = () => {
   return (
@@ -16,7 +20,10 @@ const Header = () => {
               <a href="/">My skills</a>
             </li>
             <li>
-              <a href="/">Hire me</a>
+              <Link to="/contact">Hire me</Link>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1bJhjGIvlsJJTPCxwsY0RvGEkHAk9r_Zv/view?usp=sharing" target="_blank" rel="noreferrer">My CV</a>
             </li>
           </ul>
         </nav>
@@ -24,19 +31,19 @@ const Header = () => {
       <div class="social-header">
         <ul>
           <li>
-            <a href="/">
-              <img src="../images/dribbble.png" alt="dribbble" />
-            </a>
+            <Link to="/">
+              <img src={github} alt="dribbble" />
+            </Link>
           </li>
           <li>
-            <a href="/">
-              <img src="../images/behance.png" alt="behance" />
-            </a>
+            <Link to="/">
+              <img src={linkedin} alt="behance" />
+            </Link>
           </li>
           <li>
-            <a href="/">
-              <img src="../images/twitter.png" alt="twitter" />
-            </a>
+            <Link to="/">
+              <img src={instagram} alt="twitter" />
+            </Link>
           </li>
         </ul>
       </div>

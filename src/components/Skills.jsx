@@ -1,15 +1,21 @@
 import React from "react";
-import react from '../images/atom.svg';
-import node from '../images/nodejs.svg';
-import docker from '../images/docker.svg';
-import redux from '../images/redux.svg';
-import mongodb from '../images/mango.svg';
-import javascript from '../images/javascript.svg';
+import react from "../images/atom.svg";
+import node from "../images/nodejs.svg";
+import docker from "../images/docker.svg";
+import redux from "../images/redux.svg";
+import mongodb from "../images/mango.svg";
+import javascript from "../images/javascript.svg";
 
 const Skills = () => {
   return (
     <section class="skills">
       <div class="skills-container">
+        <div class="inner bottom transition2">
+          <p class="subtitle">My Programming Stack</p>
+          <a href="/" class="featured-title">
+            Skills
+          </a>
+        </div>
         <ul>
           <li class="transition2">
             <div class="icon-container one">

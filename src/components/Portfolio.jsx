@@ -7,6 +7,12 @@ import alan from '../images/alan.png';
 const Portfolio = () => {
   return (
     <section class="portfolio">
+      <div class="inner bottom transition2">
+          <a href="/" class="featured-title">
+            My Pojects
+          </a>
+          <p class="subtitle">/ All My Pojects With Live Link /</p>
+        </div>
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">

@@ -1,61 +1,76 @@
-import React, { useState, useEffect}  from "react";
+import React, { useState, useEffect } from "react";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
+import instagram from "../images/instagram.png";
 
 let tl = gsap.timeline();
 const heroAnimation = (completeAnimation) => {
-  tl.from('.content', {
-    y: '-30%',
+  tl.from(".content", {
+    y: "-30%",
     opacity: 0,
     duration: 2,
-    ease: 'Power4.easeOut'
-})
-tl.from('.stagger1', {
-    opacity: 0,
-    y: -50,
-    stagger: .3,
-    ease: 'Power4.easeOut',
-    duration: 2
-}, "-=1.5")
-tl.from('.hero-design', {
-    opacity: 0, y: 50, ease: 'Power4.easeOut', duration: 1
-}, "-=2")
+    ease: "Power4.easeOut",
+  });
+  tl.from(
+    ".stagger1",
+    {
+      opacity: 0,
+      y: -50,
+      stagger: 0.3,
+      ease: "Power4.easeOut",
+      duration: 2,
+    },
+    "-=1.5"
+  );
+  tl.from(
+    ".hero-design",
+    {
+      opacity: 0,
+      y: 50,
+      ease: "Power4.easeOut",
+      duration: 1,
+    },
+    "-=2"
+  );
 
-gsap.from(".square-anim", {
-    stagger: .2,
+  gsap.from(".square-anim", {
+    stagger: 0.2,
     scale: 0.1,
     duration: 1,
-    ease: 'Back.easeOut.config(1.7)'
-})
+    ease: "Back.easeOut.config(1.7)",
+  });
 
-gsap.from(".transition2", {
+  gsap.from(".transition2", {
     scrollTrigger: {
-        trigger: '.transition2',
-        start: "top bottom"
+      trigger: ".transition2",
+      start: "top bottom",
     },
     y: 50,
     opacity: 0,
     duration: 1.2,
-    stagger: .3
-})
+    stagger: 0.3,
+  });
 
-gsap.from(".transition3", {
+  gsap.from(".transition3", {
     scrollTrigger: {
-        trigger: ".transition3",
-        start: "top center"
+      trigger: ".transition3",
+      start: "top center",
     },
     y: 50,
     opacity: 0,
     duration: 1.2,
-    stagger: .6
-});
-}
+    stagger: 0.6,
+  });
+};
 
 const Contact = () => {
-  const [ setAnimationComplete ] = useState(false);
+  const [setAnimationComplete] = useState(false);
 
   const completeAnimation = () => {
-    setAnimationComplete(true)
-  }
+    setAnimationComplete(true);
+  };
 
   useEffect(() => {
     heroAnimation(completeAnimation);
@@ -74,35 +89,71 @@ const Contact = () => {
           effectively self-manage during independent projects, as well as
           collaborate as part of a productive team.
         </p>
-        <div class="meet stagger1">
-          <span>👇</span>
-          <p>Meet Arsim Sejdiu</p>
+        <div class="social-header">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/arsimmsejdiu"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={github} alt="dribbble" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/arsim-sejdiu-93447331/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={linkedin} alt="behance" />
+              </a>
+            </li>
+            <li>
+              <Link to="/">
+                <img src={instagram} alt="insta" />
+              </Link>
+            </li>
+          </ul>
         </div>
-        <svg class="scroll stagger1" width="40" height="77" viewBox="0 0 40 77">
-          <g id="scroll" transform="translate(-253 -787)">
-            <g
-              id="Rectangle_12"
-              data-name="Rectangle 12"
-              transform="translate(253 787)"
-              fill="none"
-              stroke="#fff"
-              stroke-width="4"
-            >
-              <rect width="40" height="77" rx="20" stroke="none" />
-              <rect x="2" y="2" width="36" height="73" rx="18" fill="none" />
-            </g>
-            <circle
-              class="circle"
-              id="Ellipse_1"
-              data-name="Ellipse 1"
-              cx="11"
-              cy="11"
-              r="11"
-              transform="translate(262 798)"
-              fill="#fff"
-            />
-          </g>
-        </svg>
+      </div>
+      <div className="contact container">
+        <div className="featured-title stagger1">
+          <p>Send a DM for Collaboration</p>
+        </div>
+        <form className="stagger1">
+          <label className="subtitle" for="fname">
+            First Name
+          </label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label className="subtitle" for="lname">
+            Last Name
+          </label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <labe className="subtitle" for="subject">
+            Subject
+          </labe>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style={{ height: "200px" }}
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     </div>
   );

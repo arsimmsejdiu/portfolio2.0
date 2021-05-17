@@ -1,12 +1,9 @@
 import React, { useState, useEffect} from "react";
-
-
+import gsap from "gsap";
 import Hero from "./Hero";
 import Feature from "./Feature";
 import Skills from './Skills';
 import Portfolio from './Portfolio';
-
-import gsap from "gsap";
 
 let tl = gsap.timeline();
 const heroAnimation = (completeAnimation) => {

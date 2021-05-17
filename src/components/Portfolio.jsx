@@ -6,7 +6,7 @@ import alan from '../images/alan.png';
 
 const Portfolio = () => {
   return (
-    <section class="portfolio">
+    <section id="work" class="portfolio">
       <div class="inner bottom transition2">
           <a href="/" class="featured-title">
             My Pojects

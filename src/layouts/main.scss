@@ -116,6 +116,10 @@ section {
   z-index: -1;
 }
 
+.featured img {
+  border-radius: 10px;
+}
+
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -348,4 +352,42 @@ section {
   to {
     transform: translate(262px, 830px);
   }
+}
+
+//Footer section
+.footer-bottom-area {
+  border-top: 1px solid;
+  border-top-color: #E5ECF4;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background: #6700ee;
+}
+
+.menus {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.link {
+  font-size: 15px;
+  color: #e5d5fa;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  display: block;
+  text-decoration: none;
+  line-height: 1.5;
+  &:hover {
+    color: #6e00ff;
+  }
+}
+
+.copyright{
+  font-size: 15px;
+  width: 100%;
 }

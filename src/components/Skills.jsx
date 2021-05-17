@@ -8,71 +8,71 @@ import javascript from "../images/javascript.svg";
 
 const Skills = () => {
   return (
-    <section class="skills">
-      <div class="skills-container">
-        <div class="inner bottom transition2">
-          <p class="subtitle">My Programming Stack</p>
-          <a href="/" class="featured-title">
+    <section id="skills" className="skills">
+      <div className="skills-container">
+        <div className="inner bottom transition2">
+          <p className="subtitle">My Programming Stack</p>
+          <a href="/" className="featured-title">
             Skills
           </a>
         </div>
         <ul>
-          <li class="transition2">
-            <div class="icon-container one">
+          <li className="transition2">
+            <div className="icon-container one">
               <img src={react} alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">ReactJS</p>
-            <p class="featured-desc skill-desc">
+            <p className="skill-title">ReactJS</p>
+            <p className="featured-desc skill-desc">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Asperiores, odit?
             </p>
           </li>
-          <li class="transition2">
-            <div class="icon-container two">
+          <li className="transition2">
+            <div className="icon-container two">
               <img src={node} alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">NodeJS</p>
-            <p class="featured-desc skill-desc">
+            <p className="skill-title">NodeJS</p>
+            <p className="featured-desc skill-desc">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Asperiores, odit?
             </p>
           </li>
-          <li class="transition2">
-            <div class="icon-container three">
+          <li className="transition2">
+            <div className="icon-container three">
               <img src={docker} alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">Docker Containers & Microservices</p>
-            <p class="featured-desc skill-desc">
+            <p className="skill-title">Docker Containers & Microservices</p>
+            <p className="featured-desc skill-desc">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Asperiores, odit?
             </p>
           </li>
-          <li class="transition2">
-            <div class="icon-container three">
+          <li className="transition2">
+            <div className="icon-container three">
               <img src={redux} alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">Redux State Management</p>
-            <p class="featured-desc skill-desc">
+            <p className="skill-title">Redux State Management</p>
+            <p className="featured-desc skill-desc">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Asperiores, odit?
             </p>
           </li>
-          <li class="transition2">
-            <div class="icon-container three">
+          <li className="transition2">
+            <div className="icon-container three">
               <img src={mongodb} alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">MongoDB Database</p>
-            <p class="featured-desc skill-desc">
+            <p className="skill-title">MongoDB Database</p>
+            <p className="featured-desc skill-desc">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Asperiores, odit?
             </p>
           </li>
-          <li class="transition2">
-            <div class="icon-container three">
+          <li className="transition2">
+            <div className="icon-container three">
               <img src={javascript} alt="UI/UX Icon" />
             </div>
-            <p class="skill-title">Javascript</p>
-            <p class="featured-desc skill-desc">
+            <p className="skill-title">Javascript</p>
+            <p className="featured-desc skill-desc">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Asperiores, odit?
             </p>

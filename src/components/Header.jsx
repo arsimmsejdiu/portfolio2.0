@@ -19,10 +19,10 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="/">My work</a>
+              <a href="/#work">My work</a>
             </li>
             <li>
-              <a href="/">My skills</a>
+              <a href="/#skills">My skills</a>
             </li>
             <li>
               <Link to="/contact">Hire me</Link>

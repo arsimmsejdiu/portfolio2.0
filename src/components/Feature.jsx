@@ -7,7 +7,7 @@ const Feature = () => {
       <div class="left">
         <div class="inner transition2">
           <p class="subtitle">Featured Project</p>
-          <a href="/" className="featured-title">
+          <a href="https://buildersolar.webflow.io/" className="featured-title">
             Leutrimolluri.com Blog App
           </a>
           <small class="small">It will be available soon</small>

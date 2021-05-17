@@ -11,9 +11,9 @@ const Header = () => {
       <header>
         <div>
           <span className="point"></span>
-          <a href="/" class="logo">
+          <Link to="/" class="logo">
             Arsim Sejdiu
-          </a>
+          </Link>
         </div>
 
         <nav>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import instagram from "../images/instagram.png";
+import Message from './Message';
 
 let tl = gsap.timeline();
 const heroAnimation = (completeAnimation) => {
@@ -117,44 +118,7 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-      <div className="contact container">
-        <div className="featured-title stagger1">
-          <p>Send a DM for Collaboration</p>
-        </div>
-        <form className="stagger1">
-          <label className="subtitle" for="fname">
-            First Name
-          </label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
-          />
-
-          <label className="subtitle" for="lname">
-            Last Name
-          </label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-          />
-
-          <labe className="subtitle" for="subject">
-            Subject
-          </labe>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Write something.."
-            style={{ height: "200px" }}
-          ></textarea>
-
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
+      <Message />
     </div>
   );
 };

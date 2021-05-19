@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import instagram from "../images/instagram.png";
-import Message from './Message';
+import smartphone from "../images/smartphone.png";
+import Message from "./Message";
 
 let tl = gsap.timeline();
 const heroAnimation = (completeAnimation) => {
@@ -77,10 +78,20 @@ const Contact = () => {
     heroAnimation(completeAnimation);
   });
   return (
-    <div class="hero">
-      <div class="content">
-        <h1 class="stagger1">Hire Me</h1>
-        <p class=" stagger1">
+    <div className="hero">
+      <div className="content">
+        <h1 className="stagger1">Hire Me</h1>
+        <div className="meet stagger1">
+          <ul>
+            <li>
+              <Link to="/">
+                <img src={smartphone} alt="smart" />
+              </Link>
+            </li>
+          </ul>
+          <p className="phone">+33749301287</p>
+        </div>
+        <p className=" stagger1">
           Versatile, results-driven professional with 2+ years comprehensive
           experience Fullstack Developer adept in bringing forth expertise in
           design, installation, testing and maintenance of software systems.
@@ -90,7 +101,7 @@ const Contact = () => {
           effectively self-manage during independent projects, as well as
           collaborate as part of a productive team.
         </p>
-        <div class="social-header">
+        <div className="social-header">
           <ul>
             <li>
               <a
@@ -112,7 +123,7 @@ const Contact = () => {
             </li>
             <li>
               <Link to="/">
-                <img src={instagram} alt="insta" />
+                <img src={instagram} alt="instagram" />
               </Link>
             </li>
           </ul>

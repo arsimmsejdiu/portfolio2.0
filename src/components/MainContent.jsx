@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import Feature from "./Feature";
 import Skills from './Skills';
 import Portfolio from './Portfolio';
+import ScrollTop from './ScrollTop';
 
 let tl = gsap.timeline();
 const heroAnimation = (completeAnimation) => {
@@ -70,6 +71,7 @@ const MainContent = () => {
       <Feature />
       <Skills />
       <Portfolio />
+      <ScrollTop />
     </div>
   );
 };

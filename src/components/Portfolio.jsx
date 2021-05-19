@@ -1,18 +1,18 @@
 import React from "react";
-import crwn from '../images/crwn.png';
-import slack from '../images/slack-features.jpg';
-import startup from '../images/startup.png';
-import alan from '../images/alan.png';
+import crwn from "../images/crwn.png";
+import slack from "../images/slack-features.jpg";
+import startup from "../images/startup.png";
+import alan from "../images/alan.png";
 
 const Portfolio = () => {
   return (
     <section id="work" class="portfolio">
       <div class="inner bottom transition2">
-          <a href="/" class="featured-title">
-            My Pojects
-          </a>
-          <p class="subtitle">/ All My Pojects With Live Link /</p>
-        </div>
+        <a href="/" class="featured-title">
+          My Pojects
+        </a>
+        <p class="subtitle">/ All My Pojects With Live Link /</p>
+      </div>
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
@@ -26,7 +26,11 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <a href="https://slack-clone-app.netlify.app" target="_blank" rel="noreferrer">
+        <a
+          href="https://slack-clone-app.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={slack} alt="Fretastic" />
         </a>
       </div>
@@ -44,7 +48,11 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <a href="https://crwn-brand-live.herokuapp.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://crwn-brand-live.herokuapp.com"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={crwn} alt="Fretastic" />
         </a>
       </div>
@@ -62,7 +70,11 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <a href="https://startup-next.netlify.app" target="_blank" rel="noreferrer">
+        <a
+          href="https://startup-next.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={startup} alt="Fretastic" />
         </a>
       </div>
@@ -79,7 +91,11 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <a href="https://alanai-app.netlify.app/" target="_blank" rel="noreferrer">
+        <a
+          href="https://alanai-app.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={alan} alt="Fretastic" />
         </a>
       </div>

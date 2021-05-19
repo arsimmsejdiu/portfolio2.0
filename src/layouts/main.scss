@@ -30,7 +30,7 @@ img {
     color: white;
     transition: all 0.4s ease-in-out;
     &:hover {
-        color: #00f7ff;
+      color: #00f7ff;
     }
   }
 }
@@ -71,16 +71,16 @@ header {
   margin-bottom: 30px;
 }
 
-.point{
-    height: 16px;
-    width: 16px;
-    background: #f7f7f7;
-    margin: 0 4px;
-    border-radius: 100%;
-    display: inline-block;
-    position: relative;
-    bottom: -2px;
-    cursor: help;
+.point {
+  height: 16px;
+  width: 16px;
+  background: #f7f7f7;
+  margin: 0 4px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  bottom: -2px;
+  cursor: help;
 }
 
 .meet {
@@ -371,7 +371,7 @@ section {
 //Footer section
 .footer-bottom-area {
   border-top: 1px solid;
-  border-top-color: #E5ECF4;
+  border-top-color: #e5ecf4;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -401,7 +401,7 @@ section {
   }
 }
 
-.copyright{
+.copyright {
   font-size: 15px;
   width: 100%;
 }

@@ -1,8 +1,19 @@
-import React from "react";
-import { portfolioItems } from '../Data/Portfolio.data';
+import React, { useState, useEffect } from "react";
 import Portfolios from "../components/Portfolios.component";
+import axios from "axios";
+
+const url = 'https://memories-projects.herokuapp.com/posts';
 
 const Portfolio = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    axios.get(url).then(res => {
+      console.log(res)
+      setPosts(res.data)
+    }).catch(error => console.error(error))
+  },[])
+
   return (
     <section id="work" className="portfolio">
       <div className="inner bottom transition2">
@@ -11,15 +22,14 @@ const Portfolio = () => {
         </a>
         <p className="subtitle">/ All My Pojects With Live Link /</p>
       </div>
-      {portfolioItems.map((items) => (
+      {posts.map(post => (
         <Portfolios 
-          key={items.id}
-          imgSrc={items.imgSrc}
-          url={items.url}
-          text={items.text}
-          altText={items.altText}
-          subTitle={items.subTitle}
-          title={items.title}
+          key={post.id}
+          title={post.title}
+          creator={post.creator}
+          message={post.message}
+          tags={post.tags}
+          selectedFile={post.selectedFile}
         />
       ))}
     </section>

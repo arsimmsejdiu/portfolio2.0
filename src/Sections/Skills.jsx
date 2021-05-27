@@ -1,10 +1,7 @@
 import React from "react";
-import react from "../images/atom.svg";
-import node from "../images/nodejs.svg";
-import docker from "../images/docker.svg";
-import redux from "../images/redux.svg";
-import mongodb from "../images/mango.svg";
-import javascript from "../images/javascript.svg";
+import Skill from "../components/Skill.component";
+
+import { skillsItems } from "../Data/Skills.data";
 
 const Skills = () => {
   return (
@@ -17,66 +14,15 @@ const Skills = () => {
           </a>
         </div>
         <ul>
-          <li className="transition2">
-            <div className="icon-container one">
-              <img src={react} alt="UI/UX Icon" />
-            </div>
-            <p className="skill-title">ReactJS</p>
-            <p className="featured-desc skill-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Asperiores, odit?
-            </p>
-          </li>
-          <li className="transition2">
-            <div className="icon-container two">
-              <img src={node} alt="UI/UX Icon" />
-            </div>
-            <p className="skill-title">NodeJS</p>
-            <p className="featured-desc skill-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Asperiores, odit?
-            </p>
-          </li>
-          <li className="transition2">
-            <div className="icon-container three">
-              <img src={docker} alt="UI/UX Icon" />
-            </div>
-            <p className="skill-title">Docker Containers & Microservices</p>
-            <p className="featured-desc skill-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Asperiores, odit?
-            </p>
-          </li>
-          <li className="transition2">
-            <div className="icon-container three">
-              <img src={redux} alt="UI/UX Icon" />
-            </div>
-            <p className="skill-title">Redux State Management</p>
-            <p className="featured-desc skill-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Asperiores, odit?
-            </p>
-          </li>
-          <li className="transition2">
-            <div className="icon-container three">
-              <img src={mongodb} alt="UI/UX Icon" />
-            </div>
-            <p className="skill-title">MongoDB Database</p>
-            <p className="featured-desc skill-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Asperiores, odit?
-            </p>
-          </li>
-          <li className="transition2">
-            <div className="icon-container three">
-              <img src={javascript} alt="UI/UX Icon" />
-            </div>
-            <p className="skill-title">Javascript</p>
-            <p className="featured-desc skill-desc">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Asperiores, odit?
-            </p>
-          </li>
+          {skillsItems.map((skill) => (
+            <Skill
+              key={skill.id}
+              imgSrc={skill.imgSrc}
+              altText={skill.altText}
+              title={skill.title}
+              text={skill.text}
+            />
+          ))}
         </ul>
       </div>
     </section>

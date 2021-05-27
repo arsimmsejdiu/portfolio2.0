@@ -2,9 +2,9 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 
-import Header from "./components/Header";
+import Header from "./Sections/Header";
 import Contact from "./components/Contact";
-import MainContent from './components/MainContent';
+import MainContent from './Sections/MainContent';
 //import Footer from './components/Footer';
 
 function App() {

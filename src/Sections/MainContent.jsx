@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import Feature from "./Feature";
 import Skills from './Skills';
 import Portfolio from './Portfolio';
-import ScrollTop from './ScrollTop';
+import ScrollTop from '../components/ScrollTop';
 
 let tl = gsap.timeline();
 const heroAnimation = (completeAnimation) => {

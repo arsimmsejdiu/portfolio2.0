@@ -1,33 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-import data from '../Data/Footer.data';
+// import { Link } from "react-router-dom";
+// import github from "../images/github.png";
+// import linkedin from "../images/linkedin.png";
+// import instagram from "../images/instagram.png";
 
 const Footer = () => {
   return (
-    <div className="footer-bottom-area">
-      <div>
-        <span className="point"></span>
-        <Link to="/" class="logo">
-          Arsim Sejdiu
-        </Link>
-      </div>
-      <div className="menus">
-        <nav>
-            {data.menuItem.map((menu,i) => (
-                <Link 
-                    path={menu.path}
-                    key={i}
-                    label={menu.label}
-                    className="link"
-                />
-            ))}
-        </nav>
-      </div>
-      <p className='copyright'>
-            Copyright by {new Date().getFullYear()} Arsim Sejdiu
-          </p>
-    </div>
+    <footer >
+      <h1>hej</h1>
+    </footer>
   );
 };
 

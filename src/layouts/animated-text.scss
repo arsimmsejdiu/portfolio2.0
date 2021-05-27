@@ -1,0 +1,11 @@
+.animated-text-container {
+    display: flex;
+    font-size: 12rem;
+    .animated-text-item {
+        transform: translateY(0);
+        transition: transform 0.75s cubic-bezier(0.71, 0, 0.175, 1);
+        &:hover {
+          transform: translateY(-40px);  
+        }
+    }
+}

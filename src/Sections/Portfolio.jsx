@@ -4,12 +4,12 @@ import Portfolios from "../components/Portfolios.component";
 
 const Portfolio = () => {
   return (
-    <section id="work" class="portfolio">
-      <div class="inner bottom transition2">
-        <a href="/" class="featured-title">
+    <section id="work" className="portfolio">
+      <div className="inner bottom transition2">
+        <a href="/" className="featured-title">
           My Pojects
         </a>
-        <p class="subtitle">/ All My Pojects With Live Link /</p>
+        <p className="subtitle">/ All My Pojects With Live Link /</p>
       </div>
       {portfolioItems.map((items) => (
         <Portfolios 
@@ -18,7 +18,7 @@ const Portfolio = () => {
           url={items.url}
           text={items.text}
           altText={items.altText}
-          subTitle={[items.subTitle]}
+          subTitle={items.subTitle}
           title={items.title}
         />
       ))}

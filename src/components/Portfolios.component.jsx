@@ -7,7 +7,7 @@ const Portfolios = ({ imgSrc, url, altText, title, text, subTitle }) => {
         <div className="portfolio-left">
           <div className="inner">
             <p className="featured-title">{title}</p>
-            <p className="subtitle">#{subTitle}</p>
+            <p className="subtitle">{subTitle.map((sub) => `#${sub}  `)}</p>
             <p className="featured-desc">{text}</p>
           </div>
         </div>

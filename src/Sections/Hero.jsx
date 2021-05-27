@@ -1,10 +1,11 @@
 import React from "react";
+import AnimatedText from '../components/AnimatedText.component';
 
 const Hero = () => {
   return (
     <div class="hero">
       <div class="content">
-        <h1 class="stagger1">Fullstack Web Developer</h1>
+        <AnimatedText class="stagger1" text="Fullstack Web Developer"></AnimatedText>
         <p class=" stagger1">
           Versatile, results-driven professional with 2+ years comprehensive
           experience Fullstack Developer adept in bringing forth expertise in

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Portfolios from "../components/Portfolios.component";
+import { FeatureSubtitle } from '../components/Paragraph';
 import axios from "axios";
 
 const url = 'https://memories-projects.herokuapp.com/posts';
@@ -9,7 +10,6 @@ const Portfolio = () => {
 
   useEffect(() => {
     axios.get(url).then(res => {
-      console.log(res)
       setPosts(res.data)
     }).catch(error => console.error(error))
   },[])
@@ -18,9 +18,9 @@ const Portfolio = () => {
     <section id="work" className="portfolio">
       <div className="inner bottom transition2">
         <a href="/" className="featured-title">
-          My Pojects
+          My Projects
         </a>
-        <p className="subtitle">/ All My Pojects With Live Link /</p>
+        <FeatureSubtitle text="/ All My Projects With Live Link /"/>
       </div>
       {posts.map(post => (
         <Portfolios 

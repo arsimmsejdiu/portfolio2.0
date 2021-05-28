@@ -1,27 +1,28 @@
 import React from "react";
 import feature from '../images/featureproject1.png';
+import { FeatureSubtitle, FeatureSmall, FeatureDesc } from '../components/Paragraph';
+import { featureDesc } from '../Data/Feature.data';
 
 const Feature = () => {
   return (
-    <section class="featured">
-      <div class="left">
-        <div class="inner transition2">
-          <p class="subtitle">Featured Project</p>
+    <section className="featured">
+      <div className="left">
+        <div className="inner transition2">
+          <FeatureSubtitle text='Featured Project'/>
           <a href="https://buildersolar.webflow.io/" className="featured-title">
             Blog App
           </a>
-          <small class="small">It will be available soon</small>
+          <FeatureSmall text='It will be available soon'/>
 
-          <p class="featured-desc">
-            This Application has a fully featured and customizable layouts, with user authentication and private routes.
-            It has also direct message and comment section per each blog. 
-          </p>
+          {featureDesc.map((item) => (
+            <FeatureDesc text={item.desc}/>
+          ))}
 
-          <p class="subtitle">More To Come Soon.</p>
+          <FeatureSubtitle text='More To Come Soon.'/>
         </div>
       </div>
       <img
-        class="right transition2"
+        className="right transition2"
         src={feature}
         alt="Featured Project"
       />

@@ -14,3 +14,7 @@ export const HeroMeet = ({ text }) => (
     <p>{text}</p>
   </div>
 );
+
+export const TitleH1 = ({ text }) => <h1 class="stagger1">{text}</h1>;
+
+

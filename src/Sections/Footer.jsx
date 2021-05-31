@@ -7,7 +7,10 @@ import React from "react";
 const Footer = () => {
   return (
     <footer >
-      <h1>hej</h1>
+      <h3 className="pagination">
+        {`Copyright by ${new Date().getFullYear()} Arsim Sejdiu`}
+      </h3>
+      
     </footer>
   );
 };

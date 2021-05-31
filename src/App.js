@@ -5,7 +5,7 @@ import "./App.scss";
 import Header from "./Sections/Header";
 import Contact from "./components/Contact";
 import MainContent from './Sections/MainContent';
-//import Footer from './Sections/Footer';
+import Footer from './Sections/Footer';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/" component={MainContent}/>
         <Route exact path="/contact" component={Contact} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -41,7 +41,7 @@ const Portfolio = () => {
           />
         ))
       )}
-      <Pagination className="pagination" count={5} color="primary" />
+      <Pagination className="pagination" count={posts.length} color="primary" />
     </section>
   );
 };

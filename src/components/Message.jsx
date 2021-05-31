@@ -1,90 +1,55 @@
-import React, { useState } from "react";
+import React from "react";
+import emailjs from "emailjs-com";
 
 const Message = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [subject, setSubject] = useState("");
+  function sendEmail(e) {
+    e.preventDefault();
 
-  const PostData = ()=>{
-    fetch("/send",{
-        method:"post",
-        headers:{
-            "Content-Type":"application/json"
+    emailjs
+      .sendForm(
+        "service_lzkgmwg",
+        "template_dlckpv5",
+        e.target,
+        "user_xbFWpXGeohdx2okl6BH7y"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
         },
-        body:JSON.stringify({
-            name,
-            email,
-            subject,
-            message
-        })
-    }).then(res=>res.json())
-    .then(data=>{
-        alert(data.message)
-        setMessage('')
-        setName('')
-        setSubject('')
-        setEmail('')
-    }).catch(err=>{
-        console.log(err)
-    })
-}
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
 
   return (
     <div className="contact container">
       <div className="featured-title stagger1">
         <p>Send a DM for Collaboration</p>
       </div>
-      <form className="stagger1" onSubmit={() => PostData()}>
-        <label className="subtitle" for="fname">
-          Your Name
-        </label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your name.."
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+      <form className="stagger1" onSubmit={sendEmail}>
+        <label className="subtitle">Your Name</label>
+        <input type="text" name="user_name" placeholder="Your name.." required/>
 
-        <label className="subtitle" for="lname">
-          Your Email
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email.."
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <label className="subtitle">Your Email</label>
+        <input type="email" name="user_email" placeholder="Your email.." required/>
 
-        <label className="subtitle" for="lname">
-          Subject
-        </label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="Your subject.."
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
-        />
+        <label className="subtitle">Subject</label>
+        <input type="text" name="user_subject" placeholder="Your subject.." required/>
 
         <labe className="subtitle" for="message">
           Your Message
         </labe>
         <textarea
-          id="message"
           name="message"
           placeholder="Write something.."
           style={{ height: "200px" }}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
         ></textarea>
-        
-        <button className="button" type="submit"> Hire Me </button>
+
+        <button className="button" type="submit" value="Send">
+          {" "}
+          Hire Me{" "}
+        </button>
       </form>
     </div>
   );

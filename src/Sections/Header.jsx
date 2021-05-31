@@ -8,11 +8,11 @@ import cv from "../images/cv.svg";
 const Header = () => {
 
   return (
-    <div class="nav-container">
+    <div className="nav-container">
       <header>
         <div>
           <span className="point"></span>
-          <Link to="/" class="logo">
+          <Link to="/" className="logo">
             Arsim Sejdiu
           </Link>
         </div>
@@ -31,7 +31,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      <div class="social-header">
+      <div className="social-header">
         <ul>
           <li>
             <a

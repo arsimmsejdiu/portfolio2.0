@@ -3,6 +3,7 @@ import Portfolios from "../components/Portfolios.component";
 import { FeatureSubtitle } from "../components/Paragraph";
 import axios from "axios";
 import Loader from "../components/Loader";
+import { Pagination } from "@material-ui/lab"
 
 const url = "https://memories-projects.herokuapp.com/posts";
 
@@ -40,6 +41,7 @@ const Portfolio = () => {
           />
         ))
       )}
+      <Pagination className="pagination" count={5} color="primary" />
     </section>
   );
 };

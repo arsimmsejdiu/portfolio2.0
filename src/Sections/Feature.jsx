@@ -1,11 +1,14 @@
 import React from "react";
 import feature from '../images/featureproject1.png';
 import { FeatureSubtitle, FeatureSmall, FeatureDesc } from '../components/Paragraph';
-import { featureDesc } from '../Data/Feature.data';
+import { data } from '../Data/Feature.data';
+// import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const Feature = () => {
   return (
     <section className="featured">
+      
       <div className="left">
         <div className="inner transition2">
           <FeatureSubtitle text='Featured Project'/>
@@ -14,7 +17,7 @@ const Feature = () => {
           </a>
           <FeatureSmall text='It will be available soon'/>
 
-          {featureDesc.map((item) => (
+          {data.map((item) => (
             <FeatureDesc text={item.desc}/>
           ))}
 

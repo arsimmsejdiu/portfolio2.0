@@ -31,3 +31,26 @@
   align-items: center;
   padding: 3rem;
 }
+
+.pagination-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.pagination__link {
+  padding: 3rem;
+  color:  #6700ee;
+  cursor: pointer;
+}
+
+.pagination__link--disabled{
+  color: #f3f3f3;
+}
+
+.pagination__link--active {
+  color: #6700ee;
+  padding: 2rem;
+  cursor: pointer;
+}

@@ -6,12 +6,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer >
-      <h3 className="pagination">
-        {`Copyright by ${new Date().getFullYear()} Arsim Sejdiu`}
-      </h3>
-      
-    </footer>
+    <section className="portfolio">
+      <footer className="footer">
+        <h3 className="pagination stagger1">
+          {`Copyright by ${new Date().getFullYear()} Arsim Sejdiu`}
+        </h3>
+      </footer>
+    </section>
   );
 };
 

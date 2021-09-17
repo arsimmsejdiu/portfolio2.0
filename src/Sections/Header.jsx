@@ -39,7 +39,7 @@ const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={github} alt="dribbble" />
+              <img src={github} alt="github-site" />
             </a>
           </li>
           <li>
@@ -48,7 +48,7 @@ const Header = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={linkedin} alt="behance" />
+              <img src={linkedin} alt="linkedin-site" />
             </a>
           </li>
           <li>
